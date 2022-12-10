@@ -15,9 +15,9 @@ int main(void)
 
 	int i;
 
-	alphabet = "abcdefghijklmnopqrstuvwxyz";
+	alphabet = 'abcdefghijklmnopqrstuvwxyz';
 	for (i = 0; i < 26; i++)
 		putchar(alphabet[i]);
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
