@@ -10,10 +10,10 @@
 
 int print_sign(int n)
 {
-	if (c > 0)
+	if (n > 0)
 		return (1);
-	if (c < 0)
+	if (n < 0)
 		return (-1);
-	if (c == 0)
+	if (n == 0)
 		return (0);
 }
