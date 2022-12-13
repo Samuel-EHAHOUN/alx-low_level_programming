@@ -14,6 +14,13 @@ int print_last_digit(int n)
 {
 	int digit;
 
+	if (n == INT_MIN)
+	{
+		n = n + 1;
+		n = -n;
+		_putchar(((digit % 10) + 1) + '0');
+		return ((digit % 10) + 1);
+	}
 	if (n < 0)
 		n = -n;
 	digit = n % 10;
