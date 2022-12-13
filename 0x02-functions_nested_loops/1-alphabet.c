@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - Entry point
  *
  * Description: 'the program's description'
  *
- * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
-	char c[] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char c;
 
-	for (i = 0; i < 26; i++)
-		_putchar(c[i]);
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
 
 	_putchar('\n');
-	return (0);
 }
