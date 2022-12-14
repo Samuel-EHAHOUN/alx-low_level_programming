@@ -16,15 +16,13 @@ int main(void)
 	a = 1;
 	b = 2;
 	pair = 2;
-	printf("1, 2, ");
-	do
-	{
+	do {
 		if ((som % 2) == 0)
 			pair = pair + som;
 		som = a + b;
 		a = b;
 		b = som;
-	} while ( som <= 4000000);
+	} while (som <= 4000000);
 	printf("%ld\n", pair);
 	return (0);
 }
