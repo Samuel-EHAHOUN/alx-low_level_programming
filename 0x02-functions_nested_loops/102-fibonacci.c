@@ -10,7 +10,9 @@
 
 int main(void)
 {
-	int i, som, a, b;
+	long int som, a, b;
+
+	int i;
 
 	som = 0;
 	a = 1;
@@ -22,9 +24,9 @@ int main(void)
 		a = b;
 		b = som;
 		if (i == 47)
-			printf("%d\n", som);
+			printf("%ld\n", som);
 		else
-			printf("%d, ", som);
+			printf("%ld, ", som);
 	}
 	return (0);
 }
