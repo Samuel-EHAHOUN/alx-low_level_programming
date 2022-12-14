@@ -18,6 +18,6 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			som = som + i;
 	}
-	printf("%d", som);
+	printf("%d\n", som);
 	return (0);
 }
