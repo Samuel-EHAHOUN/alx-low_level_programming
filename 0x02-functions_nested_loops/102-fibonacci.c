@@ -22,7 +22,7 @@ int main(void)
 		a = b;
 		b = som;
 		if (i == 47)
-			prinf("%d\n", som);
+			printf("%d\n", som);
 		else
 			printf("%d, ", som);
 	}
