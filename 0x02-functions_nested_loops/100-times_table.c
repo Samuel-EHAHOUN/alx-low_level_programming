@@ -12,6 +12,8 @@ void print_times_table(int t)
 {
 	int i, j, n;
 
+	if ((t < 0) || (t > 15))
+		exit();
 	for (i = 0; i <= t; i++)
 	{
 		for (j = 0; j <= t; j++)
