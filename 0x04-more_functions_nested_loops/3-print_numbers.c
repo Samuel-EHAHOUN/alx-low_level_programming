@@ -4,7 +4,7 @@
  *
  * print_numbers - euhhh
  *
- * Description: Check if n is lowercase
+ * Return: Check if n is lowercase
  *
  */
 
