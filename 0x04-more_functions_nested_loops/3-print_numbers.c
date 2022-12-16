@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *
  * print_numbers - euhhh
  *
- * Return: Check if n is lowercase
- *
+ * Description: Check if n is lowercase
  */
 
 void print_numbers(void)
