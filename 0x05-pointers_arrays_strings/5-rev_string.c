@@ -18,12 +18,12 @@ void rev_string(char *s)
 		i++;
 	}
 	i--;
-	while (i > 0)
+	while (i >= 0)
 	{
-		s[j] = tmp[i];
+		s[i] = tmp[j];
 		j++;
 		i--;
 	}
-	s[j] = '\0';
+	s[j++] = '\0';
 	_putchar('\n');
 }
