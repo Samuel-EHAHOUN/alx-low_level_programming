@@ -9,18 +9,18 @@
 void rev_string(char *s)
 {
 	int i = 0;
-	char tmp[] = s[];
+	char tmp[];
 	int j = 0;
 
 	while (s[i] != '\0')
 	{
+		tmp[i] = s[i];
 		i++;
 	}
-	i--;
-	j = i;
-	while (i >= 0)
+	while (tmp[i] != '\0')
 	{
-		s[j - i] = tmp[i];
+		s[j] = tmp[i];
+		j++;
 		i--;
 	}
 	_putchar('\n');
