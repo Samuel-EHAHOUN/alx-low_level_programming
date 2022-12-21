@@ -20,10 +20,8 @@ void rev_string(char *s)
 	i--;
 	while (i >= 0)
 	{
-		s[i] = tmp[j];
+		s[j] = tmp[i];
 		j++;
 		i--;
 	}
-	s[j++] = '\0';
-	_putchar('\n');
 }
