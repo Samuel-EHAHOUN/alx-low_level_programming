@@ -6,7 +6,7 @@
  * @str: the pointer
  *
  */
-void _puts(int *str)
+void _puts(char *str)
 {
 	int i = 0;
 
