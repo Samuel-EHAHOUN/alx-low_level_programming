@@ -34,13 +34,11 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		for (i = 0; i < size2; i++)
 			*(dest + size1 + i) = *(src + i);
-		*(dest + size1 + size2) = '\0';
 	}
 	else
 	{
-		for (i = 0; i <= n; i++)
+		for (i = 0; i < n; i++)
 			*(dest + size1 + i) = *(src + i);
-		*(dest + size1 + n + 1) = '\0';
 	}
 	return (dest);
 }
