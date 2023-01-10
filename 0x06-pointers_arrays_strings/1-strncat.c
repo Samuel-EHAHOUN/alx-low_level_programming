@@ -32,8 +32,9 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	else
 	{
-		for(i = 0; i <= n; i++)
+		for (i = 0; i <= n; i++)
 			*(dest + size1 + i) = *(src + i);
+		*(dest + size1 + n + 1) = '\0';
 	}
 	return (dest);
 }
