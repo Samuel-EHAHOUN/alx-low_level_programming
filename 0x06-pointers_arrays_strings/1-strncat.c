@@ -25,10 +25,16 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		size2++;
 	}
-	if (n >= size2)
+	if (n = size2)
 	{
 		for (i = 0; i <= size2; i++)
 			*(dest + size1 + i) = *(src + i);
+	}
+	else if (n > size2)
+	{
+		for (i = 0; i < size2; i++)
+			*(dest + size1 + i) = *(src + i);
+		*(dest + size1 + size2) = '\0';
 	}
 	else
 	{
