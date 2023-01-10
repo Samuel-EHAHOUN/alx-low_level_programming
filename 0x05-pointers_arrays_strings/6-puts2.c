@@ -1,0 +1,24 @@
+#include "main.h"
+
+/**
+ * puts2 - put
+ *
+ * @str: a string
+ */
+
+void puts2(char *str)
+{
+	int size = 0;
+
+	while (*(str + size) != '\0')
+	{
+		size++;
+	}
+
+	for (i = 0; i < size - 1; i++)
+	{
+		if (i % 2 == 0)
+			_putchar(*(str + i));
+	}
+	_putchar('\n');
+}
