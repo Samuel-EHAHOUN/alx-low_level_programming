@@ -3,7 +3,7 @@
 /**
  * string_toupper - euhh
  *
- * @s: a string
+ * @str: a string
  *
  * Return: a char *
  */
