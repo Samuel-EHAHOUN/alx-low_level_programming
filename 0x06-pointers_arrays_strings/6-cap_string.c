@@ -1,22 +1,33 @@
 #include "main.h"
 
 /**
- * cap_string - euuh
+ * cap_string - Capitalize the first letter of each word in a string
  *
- * @str: a string
+ * @str: a pointer to a string
  *
- * Return: a char *
+ * Return: a pointer to the modified string
  */
-
 char *cap_string(char *str)
 {
-	int i = 0;
+    int i;
 
-	while (str[i] != '\0' && str[i + 1] != '\0')
-	{
-		if ((str[i] <= 122 && 97 <= str[i]) && (str[i + 1] < 97 && 122 < str[i + 1]))
-			str[i] -= 32;
-		i++;
-	}
-	return (str);
+    if (str[0] >= 'a' && str[0] <= 'z')
+    {
+        str[0] = str[0] - 32;
+    }
+
+    for (i = 1; str[i] != '\0'; i++)
+    {
+        if ((str[i - 1] == ' ' || str[i - 1] == '\t' || str[i - 1] == '\n'
+            || str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == '.'
+            || str[i - 1] == '!' || str[i - 1] == '?' || str[i - 1] == '\"'
+            || str[i - 1] == '(' || str[i - 1] == ')' || str[i - 1] == '{'
+            || str[i - 1] == '}')
+            && (str[i] >= 'a' && str[i] <= 'z'))
+        {
+            str[i] = str[i] - 32;
+        }
+    }
+    return (str);
 }
+
