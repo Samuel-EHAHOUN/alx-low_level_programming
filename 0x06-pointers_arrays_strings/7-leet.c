@@ -11,7 +11,7 @@
 char *leet(char *str)
 {
 	int i = 0, j = 0;
-	char letters[] = "ae0tlAEOTL";
+	char letters[] = "aeotlAEOTL";
 	char numbers[] = "4307143071";
 
 	while (str[i] != '\0')
