@@ -1,4 +1,6 @@
-#include "mainh"
+
+
+
 
 /**
  * cap_string - euuh
