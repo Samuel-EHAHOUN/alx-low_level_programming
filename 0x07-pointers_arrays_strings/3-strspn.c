@@ -31,7 +31,7 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (n == tmp)
 			n = 0;
-		if(n > d)
+		if (n > d)
 			d = n;
 	}
 	return (d);
