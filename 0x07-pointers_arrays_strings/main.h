@@ -6,5 +6,5 @@ unsigned int _strspn(char *a, char *b);
 char *_strpbrk(char *a, char *b);
 char *_strstr(char *a, char *b);
 void print_chessboard(char (*a)[8]);
-void print_diagsums(int *a, intb);
+void print_diagsums(int *a, int b);
 void set_string(char **s, char *to);

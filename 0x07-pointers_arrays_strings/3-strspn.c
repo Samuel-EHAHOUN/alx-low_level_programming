@@ -12,7 +12,8 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0, tmp, i, j, d = 0;
+	int n = 0, tmp, i, j, d = 0;
+
 	int size1 = 0, size2 = 0;
 
 	while (s[size1] != '\0')
